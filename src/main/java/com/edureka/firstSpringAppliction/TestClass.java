@@ -12,7 +12,7 @@ public class TestClass {
 		User user =  (User) context.getBean("user");
 		System.out.println(user.getName());
 		
-		Car car= (Car) context.getBean("car");
+		Car car= (Car) context.getBean("car1");
 		System.out.println(car.getName());
 		System.out.println(car.getCost());		
 		

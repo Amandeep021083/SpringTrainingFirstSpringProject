@@ -5,12 +5,18 @@
 
 	<bean id="user" class="com.edureka.firstSpringAppliction.User">
 		<property name="name" value="avinash"></property>
-		
-		<property name="car" ref="car"></property>
+
+		<property name="car" ref="car1"></property>
+
+		<constructor-arg name="car" ref="car2"></constructor-arg>
 	</bean>
 
-	<bean id="car" class="com.edureka.firstSpringAppliction.Car">
+	<bean id="car1" class="com.edureka.firstSpringAppliction.Car">
 		<property name="name" value="Vitara Brezza"></property>
 		<property name="cost" value="200"></property>
+	</bean>
+	<bean id="car2" class="com.edureka.firstSpringAppliction.Car">
+		<property name="name" value="Rolls Royce"></property>
+		<property name="cost" value="10000"></property>
 	</bean>
 </beans>
